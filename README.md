@@ -13,5 +13,15 @@
 ## Run Kafka Producer to Add Material into List (keep window open)
 .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic jacks information
 
+### Customer Producer:
+Open a new PowerShell as Administrator in the root project folder, start the Producer app using topic test:
+
+java -cp target/kafka-case-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.s526937.kafka.CustomProducer
+
 ## Run Kafka Consumer that Reorders and Shows List Contents (keep window open)
 .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic jacks information --from-beginning
+
+### Customer Consumer:
+Open PowerShell as Administrator in the root project folder, start the original consumer app:
+
+java -cp target/kafka-case-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.s526937.kafka.CustomConsumer
