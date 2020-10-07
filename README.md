@@ -12,9 +12,6 @@
 
 ## Run Kafka Producer to Add Material into List (keep window open)
 .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic jacks information
-> Item 1
-> Item 2
-> Item 3
 
 ## Run Kafka Consumer that Reorders and Shows List Contents (keep window open)
 .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic jacks information --from-beginning
